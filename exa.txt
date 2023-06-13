@@ -1,0 +1,259 @@
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 ~
+$ cd c:
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c
+$ cd git
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git
+$ git clone https://github.com/veidamichell1/repositorioexamen.git
+fatal: destination path 'repositorioexamen' already exists and is not an empty d
+irectory.
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git
+$ cd repositorioexamen
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch produccion
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        producciones/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git commit -m "Creando branches"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[produccion f155986] Creando branches
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 producciones/descarga.png
+ create mode 100644 producciones/materia prima.txt
+ create mode 100644 producciones/productofinal.txt
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git branch
+  main
+* produccion
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git checkout produccion
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Already on 'produccion'
+D       producciones/descarga.png
+D       producciones/materia prima.txt
+D       producciones/productofinal.txt
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git push origin produccion
+remote: Permission to veidamichell1/repositorioexamen.git denied to elminiduy.
+fatal: unable to access 'https://github.com/veidamichell1/repositorioexamen/': T
+he requested URL returned error: 403
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true
+ instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch produccion
+nothing to commit, working tree clean
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git push
+fatal: The current branch produccion has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin produccion
+
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git branch ventas
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git checkout ventas
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'ventas'
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (ventas)
+$ git push origin ventas
+remote: Permission to veidamichell1/repositorioexamen.git denied to elminiduy.
+fatal: unable to access 'https://github.com/veidamichell1/repositorioexamen/': The requested URL returned error: 403
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (ventas)
+$ git branch
+  main
+  produccion
+* ventas
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (ventas)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git branch recurso_humano
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git branch
+* main
+  produccion
+  recurso_humano
+  ventas
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git checkout recurso_humano
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'recurso_humano'
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (recurso_humano)
+$ git push origin recurso_humano
+remote: Permission to veidamichell1/repositorioexamen.git denied to elminiduy.
+fatal: unable to access 'https://github.com/veidamichell1/repositorioexamen/': The requested URL returned error: 403
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (recurso_humano)
+$ git branch
+  main
+  produccion
+* recurso_humano
+  ventas
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (recurso_humano)
+$ git checkout produccion
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'produccion'
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git merge main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Already up to date.
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git add .
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git push produccion
+fatal: 'produccion' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git push origin produccion
+remote: Permission to veidamichell1/repositorioexamen.git denied to elminiduy.
+fatal: unable to access 'https://github.com/veidamichell1/repositorioexamen/': The requested URL returned error: 403
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch produccion
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   producciones/imagenproducto.txt
+        new file:   recurso humano/empleados.txt
+        new file:   ventas/tienda.txt
+
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git log
+commit f155986b03c3e37c10b2b6df50fd6ef62e67ef83 (HEAD -> produccion)
+Author: elminiduy <tic-280052@utnay.edu.mx>
+Date:   Mon Jun 12 16:53:29 2023 -0700
+
+    Creando branches
+
+commit ea39854f250faa834d855d91429d3e84c17d5ea1 (origin/main, origin/HEAD, ventas, recurso_humano, main)
+Author: veidamichell1 <134742264+veidamichell1@users.noreply.github.com>
+Date:   Mon Jun 12 16:33:33 2023 -0700
+
+    Initial commit
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git commit -m "cambios en produccion"
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[produccion c1348b5] cambios en produccion
+ 3 files changed, 8 insertions(+)
+ create mode 100644 producciones/imagenproducto.txt
+ create mode 100644 recurso humano/empleados.txt
+ create mode 100644 ventas/tienda.txt
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git log
+commit c1348b535afcc542748222a9043f1dc6c1a91e83 (HEAD -> produccion)
+Author: elminiduy <tic-280052@utnay.edu.mx>
+Date:   Mon Jun 12 17:20:58 2023 -0700
+
+    cambios en produccion
+
+commit f155986b03c3e37c10b2b6df50fd6ef62e67ef83
+Author: elminiduy <tic-280052@utnay.edu.mx>
+Date:   Mon Jun 12 16:53:29 2023 -0700
+
+    Creando branches
+
+commit ea39854f250faa834d855d91429d3e84c17d5ea1 (origin/main, origin/HEAD, ventas, recurso_humano, main)
+Author: veidamichell1 <134742264+veidamichell1@users.noreply.github.com>
+Date:   Mon Jun 12 16:33:33 2023 -0700
+
+    Initial commit
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git push origin produccion
+remote: Permission to veidamichell1/repositorioexamen.git denied to elminiduy.
+fatal: unable to access 'https://github.com/veidamichell1/repositorioexamen/': The requested URL returned error: 403
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (produccion)
+$ git checkout main
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git remote -v
+origin  https://github.com/veidamichell1/repositorioexamen (fetch)
+origin  https://github.com/veidamichell1/repositorioexamen (push)
+
+LAB08-PC26@DESKTOP-4VQQ1GJ MINGW64 /c/git/repositorioexamen (main)
+$ git push
+info: please complete authentication in your browser...
+Everything up-to-date
